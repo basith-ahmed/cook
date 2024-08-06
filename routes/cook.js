@@ -12,6 +12,6 @@ router.get("/", (req, res) => {
   res.send("You have reached the kitchen! Lets cook something!");
 });
 
-router.get("/:animal", (req, res) => {});
+router.get("/:animal", getImage, (req, res) => {});
 
 module.exports = router;
