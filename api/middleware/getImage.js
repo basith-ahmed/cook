@@ -4,10 +4,10 @@ const dotenv = require('dotenv').config();
 const KEY = process.env.API_KEY;
 
 async function getImage(req, res, next) {
-    const animal = req.params.animal;
+    const dish = req.params.dish;
     try {
       const response = await axios.get(
-        `https://pixabay.com/api/?key=${KEY}&q=${animal}&image_type=photo`
+        `https://pixabay.com/api/?key=${KEY}&q=${dish}&image_type=photo`
       );
       
       const images = response.data.hits;
