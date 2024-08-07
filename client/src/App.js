@@ -1,10 +1,10 @@
-import React from 'react';
-import AnimalImageDisplay from './components/ImageDisplay';
+import React from "react";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <div className="App">
-      <AnimalImageDisplay />
+      <Layout />
     </div>
   );
 }

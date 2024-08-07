@@ -4,10 +4,10 @@ const dotenv = require('dotenv').config();
 const KEY = process.env.API_KEY;
 
 async function getImage(req, res, next) {
-    const animal = req.params.animal;
+    const dish = req.params.dish;
     try {
       const response = await axios.get(
-        `https://pixabay.com/api/?key=${KEY}&q=${animal}&image_type=photo`
+        `https://pixabay.com/api/?key=${KEY}&q=${dish}&image_type=photo`
       );
       
       const images = response.data.hits;
@@ -16,7 +16,7 @@ async function getImage(req, res, next) {
         const randomImage = images[Math.floor(Math.random() * images.length)];
         res.status(200).json({ imageUrl: randomImage.webformatURL });
       } else {
-        res.status(404).json({ error: "No images found for this animal" });
+        res.status(404).json({ error: "No images found for this keyword" });
       }
     } catch (error) {
       console.error("Error fetching image:", error);
