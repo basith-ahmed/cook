@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const ImageDisplay = () => {
   const [animal, setAnimal] = useState('');
@@ -8,7 +7,7 @@ const ImageDisplay = () => {
 
   const fetchImage = async () => {
     try {
-      const response = await axios.get(`cook.basithahmed.me/cook/${animal}`);
+      const response = await fetch(`https://cook.basithahmed.me/cook/${animal}`);
       const data = await response.json();
       if (response.ok) {
         setImageUrl(data.imageUrl);
