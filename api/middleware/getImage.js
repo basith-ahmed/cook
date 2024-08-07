@@ -16,7 +16,7 @@ async function getImage(req, res, next) {
         const randomImage = images[Math.floor(Math.random() * images.length)];
         res.status(200).json({ imageUrl: randomImage.webformatURL });
       } else {
-        res.status(404).json({ error: "No images found for this animal" });
+        res.status(404).json({ error: "No images found for this keyword" });
       }
     } catch (error) {
       console.error("Error fetching image:", error);
