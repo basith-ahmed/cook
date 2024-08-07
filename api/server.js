@@ -1,11 +1,16 @@
 const express = require("express");
 const axios = require("axios");
+const cors = require("cors");
 const dotenv = require('dotenv').config();
 const cookRouter = require("./routes/cook");
 
+const port = process.env.PORT || 3000;
+
 const app = express();
 
-const port = process.env.PORT || 3000;
+app.use(cors({
+  origin: "https://fe.cook.basithahmed.me"
+}));
 
 app.get("/", (req, res) => {
   res.status(200);
