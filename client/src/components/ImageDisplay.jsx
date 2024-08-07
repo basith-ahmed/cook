@@ -7,7 +7,7 @@ const ImageDisplay = () => {
 
   const fetchImage = async () => {
     try {
-      const response = await fetch(`https://cook.basithahmed.me/cook/${animal}`);
+      const response = await fetch(`https://cook-api.basithahmed.me/cook/${animal}`);
       const data = await response.json();
       if (response.ok) {
         setImageUrl(data.imageUrl);
