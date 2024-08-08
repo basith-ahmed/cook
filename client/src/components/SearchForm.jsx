@@ -27,7 +27,7 @@ const SearchForm = ({ dish, setDish, fetchImage }) => {
     <div className="w-full flex relative items-center">
       <div className="w-full flex relative items-center">
         {!hasText && (
-          <span className="absolute left-2 text-gray-500">
+          <span className="absolute left-[6px] text-gray-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -70,7 +70,7 @@ const SearchForm = ({ dish, setDish, fetchImage }) => {
             : "bg-gradient-to-b from-[rgba(255,255,255,0.17)] to-transparent bg-[#007AFF]"
         } shadow-[0px_1px_2.5px_rgba(0,122,255,0.24),0px_0px_0px_0.5px_rgba(0,122,255,0.12)] rounded-[5px] text-white`}
       >
-        {isFetching ? "Searching" : "Search"}
+        {isFetching ? "Cooking" : "Cook"}
       </button>
     </div>
   );
