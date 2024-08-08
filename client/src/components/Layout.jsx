@@ -11,6 +11,11 @@ const Layout = () => {
 
   const fetchImage = async () => {
     try {
+      if (!dish) {
+        setError("Please enter a word!");
+        setImageUrl("");
+        return;
+      }
       const response = await fetch(`https://cook-api.basithahmed.me/cook/${dish}`);
       const data = await response.json();
       if (response.ok) {
