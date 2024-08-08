@@ -1,11 +1,11 @@
 const express = require("express");
 const axios = require("axios");
-const dotenv = require('dotenv').config();
+const dotenv = require("dotenv").config();
 const getImage = require("../middleware/getImage");
 
 const router = express.Router();
 
-const key = process.env.API_KEY;
+const KEY = process.env.API_KEY;
 
 router.get("/", (req, res) => {
   res.status(200);

@@ -1,7 +1,7 @@
 const express = require("express");
 const axios = require("axios");
-const cors = require("cors");
 const dotenv = require('dotenv').config();
+const cors = require("cors");
 const cookRouter = require("./routes/cook");
 
 const port = process.env.PORT || 3001;
