@@ -64,7 +64,7 @@ const SearchForm = ({ dish, setDish, fetchImage }) => {
       <button
         onClick={handleSearch}
         disabled={isFetching}
-        className={`flex flex-col justify-center items-center outline-none p-[3px] px-4 ml-2 ${
+        className={`flex flex-col justify-center items-center outline-none p-[3px] ml-2 w-[110px] ${
           isFetching
             ? "bg-gray-400"
             : "bg-gradient-to-b from-[rgba(255,255,255,0.17)] to-transparent bg-[#007AFF]"
