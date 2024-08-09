@@ -41,6 +41,7 @@ router.get("/", (req, res) => {
         <h1>COOK-API Documentation</h1>
         <p>Welcome to the COOK API!</p>
         <p>To read further about the API, head over to <a href="https://github.com/basith-ahmed/cook" target="_blank">documentation</a> page.</p>
+        <p>To see sample Front-End implementation, head over to <a href="https://cook-client.basithahmed.me" target="_blank">client</a> page.</p>
         <h2>Endpoints:</h2>
         <h3>GET cook/</h3>
         <p>Returns the COOK-API documentation(current page).</p>

@@ -2,7 +2,7 @@
 
 ### Overview
 
-The COOK-API is a simple API service designed to fetch random images related to food or dishes. It is a RESTful API built with Express.js and which uses Pixabay API to fetch images. This doc provides a detailed instruction on how to access the API, use its endpoints, and integrate it into your frontend application.
+The COOK-API is a simple API service designed to fetch random images related to things you search. It is a RESTful API built with Express.js and which uses Pixabay API to fetch images. This doc provides a detailed instruction on how to access the API, use its endpoints, and integrate it into your frontend.
 
 ### Base URL
 
@@ -142,4 +142,4 @@ const fetchDishImage = async (dish) => {
 };
 ```
 
-NOW MAKE ME A CUP OF COFFEE CHEF!!!
+HEY CHEF! LET'S START COOKING!
